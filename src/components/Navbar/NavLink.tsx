@@ -21,7 +21,7 @@ export default function NavLink({
 				className={cn(
 					"transition-all hover:opacity-90 text-dark",
 					filled
-						? "bg-primary text-light hover:opacity-100 opacity-95 px-11 py-[10px] rounded-xl  shadow-xl"
+						? "bg-primary text-light hover:opacity-100 hover:scale-95 hover:shadow-md opacity-95 px-11 py-[10px] rounded-xl shadow-xl"
 						: "hover:text-primary",
 					mobile && "text-lg",
 				)}
