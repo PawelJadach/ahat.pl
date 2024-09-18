@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/Icons";
 import { cn } from "@/utils/cn";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Services = () => {
@@ -35,7 +36,7 @@ const Services = () => {
 					</button>
 					<button
 						onClick={() => setTab(1)}
-						className="flex flex-col items-center gap-4"
+						className="flex flex-col items-center gap-4 group"
 						data-aos="flip-left"
 						data-aos-delay="600"
 					>
@@ -49,7 +50,7 @@ const Services = () => {
 					</button>
 					<button
 						onClick={() => setTab(2)}
-						className="flex flex-col items-center gap-4"
+						className="flex flex-col items-center gap-4 group"
 						data-aos="flip-left"
 						data-aos-delay="800"
 					>
@@ -63,7 +64,7 @@ const Services = () => {
 					</button>
 					<button
 						onClick={() => setTab(3)}
-						className="flex flex-col items-center gap-4"
+						className="flex flex-col items-center gap-4 group"
 						data-aos="flip-left"
 						data-aos-delay="1000"
 					>
@@ -89,7 +90,9 @@ const Services = () => {
 							poprawiają doświadczenie użytkowników i wspierają
 							osiąganie celów Twojej marki.
 						</p>
-						<Button>Zleć stworzenie strony</Button>
+						<Link href="#kontakt">
+							<Button>Zleć stworzenie strony</Button>
+						</Link>
 					</div>
 					<Image
 						src="/services/ui-ux.jpg"
@@ -112,7 +115,9 @@ const Services = () => {
 							projekty graficzne wyróżnią Twoją markę i przyciągną
 							uwagę odbiorców
 						</p>
-						<Button>Zleć projekt</Button>
+						<Link href="#kontakt">
+							<Button>Zleć projekt</Button>
+						</Link>
 					</div>
 					<Image
 						src="/services/design.png"
@@ -135,7 +140,9 @@ const Services = () => {
 							dzięki spersonalizowanej strategii i atrakcyjnym
 							materiałom wizualnym.
 						</p>
-						<Button>Zleć prowadzenie</Button>
+						<Link href="#kontakt">
+							<Button>Zleć prowadzenie</Button>
+						</Link>
 					</div>
 					<Image
 						src="/services/sm.png"
@@ -158,7 +165,9 @@ const Services = () => {
 							oddaje każdy detal Twojego projektu – od wizytówek
 							po duże formaty.
 						</p>
-						<Button>Zleć wydruk</Button>
+						<Link href="#kontakt">
+							<Button>Zleć wydruk</Button>
+						</Link>
 					</div>
 					<Image
 						src="/services/print.png"
@@ -246,7 +255,9 @@ const Services = () => {
 						width={560}
 						height={410}
 					/>
-					<Button>Skontaktuj się</Button>
+					<Link href="#kontakt">
+						<Button>Skontaktuj się</Button>
+					</Link>
 				</div>
 			</div>
 		</>

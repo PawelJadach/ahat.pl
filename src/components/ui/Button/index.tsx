@@ -11,13 +11,10 @@ const Button = ({ children, ...rest }: ButtonProps) => {
 		<button
 			{...rest}
 			className={cn(
-				"bg-primary text-light rounded-lg px-10 py-3 md:text-lg hover:bg-primary/90 transition-all font-bold tracking-wider disabled:bg-primary/30 disabled:text-light/40 disabled:cursor-not-allowed  shadow-xl",
-				rest.className,
+				"bg-primary transition-all text-light rounded-lg px-10 py-3 hover:scale-95 hover:shadow-md md:text-lg font-bold tracking-wider shadow-xl",
 			)}
 		>
-			<span data-aos="zoom-in" data-aos-delay="600">
-				{children}
-			</span>
+			{children}
 		</button>
 	);
 };

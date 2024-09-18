@@ -30,13 +30,9 @@ const Hero = () => {
 					Precyzja, jakość i indywidualne podejście w każdym
 					projekcie.
 				</p>
-				<Button
-					data-aos="fade-right"
-					data-aos-delay="400"
-					className="bg-dark text-light hover:bg-dark/90"
-				>
-					Sprawdź Nasze Usługi
-				</Button>
+				<div data-aos="fade-right" data-aos-delay="400">
+					<Button>Sprawdź Nasze Usługi</Button>
+				</div>
 			</div>
 			<div className={style.grid}>
 				<div
