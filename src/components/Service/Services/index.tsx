@@ -6,6 +6,7 @@ import {
 	SmIcon,
 	UiUxDesignIcon,
 } from "@/components/ui/Icons";
+import { cn } from "@/utils/cn";
 import Image from "next/image";
 import React from "react";
 
@@ -20,37 +21,57 @@ const Services = () => {
 				<div className="flex justify-around">
 					<button
 						onClick={() => setTab(0)}
-						className="flex flex-col items-center gap-4"
+						className="flex flex-col items-center gap-4 group"
+						data-aos="flip-left"
+						data-aos-delay="400"
 					>
 						<UiUxDesignIcon
-							className={tab === 0 ? "fill-primary" : "fill-dark"}
+							className={cn(
+								tab === 0 ? "fill-primary" : "fill-dark",
+								"group-hover:scale-110 transition-all",
+							)}
 						/>
 						<h3>UI / UX Design</h3>
 					</button>
 					<button
 						onClick={() => setTab(1)}
 						className="flex flex-col items-center gap-4"
+						data-aos="flip-left"
+						data-aos-delay="600"
 					>
 						<DesignIcon
-							className={tab === 1 ? "fill-primary" : "fill-dark"}
+							className={cn(
+								tab === 1 ? "fill-primary" : "fill-dark",
+								"group-hover:scale-110 transition-all",
+							)}
 						/>
 						<h3>Projektowanie</h3>
 					</button>
 					<button
 						onClick={() => setTab(2)}
 						className="flex flex-col items-center gap-4"
+						data-aos="flip-left"
+						data-aos-delay="800"
 					>
 						<SmIcon
-							className={tab === 2 ? "fill-primary" : "fill-dark"}
+							className={cn(
+								tab === 2 ? "fill-primary" : "fill-dark",
+								"group-hover:scale-110 transition-all",
+							)}
 						/>
 						<h3>Obsługa SM</h3>
 					</button>
 					<button
 						onClick={() => setTab(3)}
 						className="flex flex-col items-center gap-4"
+						data-aos="flip-left"
+						data-aos-delay="1000"
 					>
 						<PrintIcon
-							className={tab === 3 ? "fill-primary" : "fill-dark"}
+							className={cn(
+								tab === 3 ? "fill-primary" : "fill-dark",
+								"group-hover:scale-110 transition-all",
+							)}
 						/>
 						<h3>Druk</h3>
 					</button>
@@ -58,7 +79,7 @@ const Services = () => {
 			</div>
 			{tab === 0 && (
 				<div
-					className="hidden md:flex flex-col md:flex-row justify-center gap-12"
+					className="hidden md:flex flex-col md:flex-row justify-center gap-12 h-[450px]"
 					data-aos={animation}
 				>
 					<div className="space-y-3 max-w-md flex flex-col items-baseline justify-center">
@@ -81,7 +102,7 @@ const Services = () => {
 			)}
 			{tab === 1 && (
 				<div
-					className="hidden md:flex justify-center gap-12  flex-col md:flex-row"
+					className="hidden md:flex justify-center gap-12  flex-col md:flex-row h-[450px]"
 					data-aos={animation}
 				>
 					<div className="space-y-3 max-w-md flex flex-col items-baseline justify-center">
@@ -104,7 +125,7 @@ const Services = () => {
 			)}
 			{tab === 2 && (
 				<div
-					className="hidden md:flex justify-center gap-12  flex-col md:flex-row"
+					className="hidden md:flex justify-center gap-12  flex-col md:flex-row h-[450px]"
 					data-aos={animation}
 				>
 					<div className="space-y-3 max-w-md flex flex-col items-baseline justify-center">
@@ -127,7 +148,7 @@ const Services = () => {
 			)}
 			{tab === 3 && (
 				<div
-					className="hidden md:flex justify-center gap-12  flex-col md:flex-row"
+					className="hidden md:flex justify-center gap-12  flex-col md:flex-row h-[450px]"
 					data-aos={animation}
 				>
 					<div className="space-y-3 max-w-md flex flex-col items-baseline justify-center">

@@ -12,7 +12,7 @@ const Footer = () => {
 					height={80}
 					alt="Logo ahat.pl"
 				/>
-				<div className="text-light flex flex-col">
+				<div className="text-light flex flex-col" id="kontakt">
 					<h2 className="mb-4 text-light">Kontakt</h2>
 					<ul className="space-y-4 list-inside">
 						<li className="flex gap-3">
