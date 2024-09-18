@@ -10,19 +10,14 @@ const config: Config = {
 	theme: {
 		extend: {
 			colors: {
-				dark: "black",
+				dark: "#1D1D1B",
 				light: "#fff",
-				secondaryLight: "#e5e5e5",
-				primary: "#fca311",
-				secondary: "#14213d",
+				primary: "#AC3931",
+				secondary: "#F4D35E",
 			},
 			container: {
 				padding: {
 					DEFAULT: "1rem",
-					sm: "2rem",
-					lg: "4rem",
-					xl: "5rem",
-					"2xl": "6rem",
 				},
 				center: true,
 				screens: {
@@ -32,6 +27,9 @@ const config: Config = {
 					xl: "1024px",
 					"2xl": "1280px",
 				},
+			},
+			dropShadow: {
+				brandShadow: "5px 5px 8px 0px rgba(30, 30, 30, 5%);",
 			},
 		},
 	},

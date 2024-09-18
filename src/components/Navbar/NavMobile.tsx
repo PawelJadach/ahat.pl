@@ -17,7 +17,7 @@ export const NavMobile = () => {
 	return (
 		<div
 			ref={ref}
-			className="lg:hidden p-6 fixed top-0 left-0 right-0 bg-dark z-10 max-w-[100vw]"
+			className="lg:hidden p-6 fixed top-0 left-0 right-0 bg-light z-10 max-w-[100vw]"
 		>
 			<div className="flex justify-between">
 				<div
@@ -32,7 +32,7 @@ export const NavMobile = () => {
 					toggled={isOpen}
 					size={24}
 					toggle={setOpen}
-					color="#fff"
+					color="#1D1D1B"
 				/>
 			</div>
 			<AnimatePresence>
@@ -42,7 +42,7 @@ export const NavMobile = () => {
 						animate={{ opacity: 1 }}
 						exit={{ opacity: 0 }}
 						transition={{ duration: 0.2 }}
-						className="fixed left-0 right-0 top-[90px] bottom-0 p-10 px-5 pt-0 bg-dark"
+						className="fixed left-0 right-0 top-[90px] bottom-0 p-10 px-5 pt-0 bg-light"
 					>
 						<ul className="grid gap-10">
 							{navLinks.map((route, idx) => {
