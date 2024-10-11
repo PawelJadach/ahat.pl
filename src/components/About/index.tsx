@@ -4,13 +4,13 @@ import Button from "../ui/Button";
 
 const About = () => {
 	return (
-		<div className="bg-secondary py-12 md:py-24 mt-12 md:my-24" id="o-mnie">
-			<div className="container grid md:grid-cols-2 gap-8">
+		<div className="bg-secondary py-12 md:py-12 mt-12 md:my-24" id="o-mnie">
+			<div className="container grid md:grid-cols-2 gap-8 items-center">
 				<Image
 					width={561}
 					height={652}
 					alt="Adam"
-					src="/adam.png"
+					src="/about.png"
 					data-aos="fade-right"
 					data-aos-delay="200"
 				/>

@@ -11,13 +11,13 @@ const Hero = () => {
 					className="tracking-normal leading-tight"
 					data-aos="fade-right"
 				>
-					Tworzymy Druk, Który{" "}
+					Tworzymy Projekty, Które{" "}
 					<span
 						className="text-primary"
 						data-aos="zoom-out-down"
 						data-aos-delay="800"
 					>
-						Inspiruje
+						Inspirują
 					</span>
 				</h1>
 				<p
